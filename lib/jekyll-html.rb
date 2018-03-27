@@ -6,7 +6,7 @@ require 'jekyll-html/end_tag'
 
 module Jekyll
 
-  module Html
+  module HTML
 
     class << self
 
@@ -51,5 +51,5 @@ module Jekyll
 
 end
 
-Liquid::Template.register_tag('starttag', Jekyll::Html::StartTag)
-Liquid::Template.register_tag('endtag', Jekyll::Html::EndTag)
+Liquid::Template.register_tag('starttag', Jekyll::HTML::StartTag)
+Liquid::Template.register_tag('endtag', Jekyll::HTML::EndTag)

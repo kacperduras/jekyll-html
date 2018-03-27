@@ -5,7 +5,7 @@ require 'jekyll-html'
 
 module Jekyll
 
-  module Html
+  module HTML
 
     class StartTag < Liquid::Tag
 
