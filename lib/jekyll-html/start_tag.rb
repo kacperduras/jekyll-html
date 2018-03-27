@@ -1,24 +1,22 @@
-require 'jekyll'
-require 'liquid'
+# frozen_string_literal: true
 
-require 'jekyll-html'
+require "jekyll"
+require "liquid"
+
+require "jekyll-html"
 
 module Jekyll
-
   module HTML
 
     class StartTag < Liquid::Tag
-
-      def initialize(tag_name, txt, tokens)
-        @context = txt.nil? || txt.empty? ? '' : txt
+      def initialize(_tag_name, txt, _tokens)
+        @context = txt.nil? || txt.empty? ? "" : txt
       end
 
-      def render(context)
+      def render(_context)
         Jekyll::Html.generate_start_tag(@context)
       end
-
     end
 
   end
-
 end
