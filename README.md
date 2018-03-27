@@ -23,15 +23,15 @@ $ gem install jekyll-html
 
 Input:
 ```
-{% starttag p %}
+{% st p %}
   Example text
-{% endtag p %}
+{% et p %}
 
-{% starttag div class=test_class %}
-  {% starttag p class=test_class %}
+{% st div class=test_class %}
+  {% et p class=test_class %}
     Example text
-  {% endtag p class=test_class %}
-{% endtag div %}
+  {% et p class=test_class %}
+{% et div %}
 ```
 
 Output:

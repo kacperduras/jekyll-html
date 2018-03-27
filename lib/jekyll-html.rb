@@ -51,5 +51,5 @@ module Jekyll
 
 end
 
-Liquid::Template.register_tag('starttag', Jekyll::HTML::StartTag)
-Liquid::Template.register_tag('endtag', Jekyll::HTML::EndTag)
+Liquid::Template.register_tag('st', Jekyll::HTML::StartTag)
+Liquid::Template.register_tag('et', Jekyll::HTML::EndTag)
